@@ -9,7 +9,6 @@ import { ChevronDown } from "lucide-react"
 export default function CartComponent({cart, setCart, handleDeleteCart}){
 
     const [open, setOpen] = useState(false);
-    
 
 return(
 

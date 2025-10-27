@@ -10,6 +10,7 @@ export default function CartComponent({cart, setCart, handleDeleteCart}){
 
     const [open, setOpen] = useState(false);
     
+
 return(
 
 <div className="w-full relative border border-gray-300 rounded-lg shadow-lg mx-2 px-2 py-2 min-h-[10vh] h-auto bg-white">
@@ -35,7 +36,7 @@ return(
             {
                 open && (
                     cart.length === 0 ? (
-                        <p className="text-gray-500 text-left p-2">Cart is empty</p>
+                        <p className="text-gray-600 text-left p-2">Cart is empty</p>
                     ) : (
                         cart.map((item) => (
                             <div key={`${item.id}-${item.rateId}`} className="flex flex-row justify-between items-center py-2 border-b border-gray-200">
